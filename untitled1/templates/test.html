@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <a href = "www.baidu.com">百度</a>
+    <h1>Dear{{ person_name}}</h1>
+    <p> Thanks for placing an order from {{ company}}.It's scheduled to ship on {{ ship_date|date:"F j,Y" }}.</p>
+    <p>here are the items you've ordered:</p>
+
+    <ul>
+    {% for item in item_list %}
+        <li>{{ item }}</li>
+    {% endfor %}
+
+
+    </ul>
+</body>
+</html>
